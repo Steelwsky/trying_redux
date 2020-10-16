@@ -7,8 +7,8 @@ class Post {
   final String body;
 
   Post.fromJson(Map<String, dynamic> json)
-      : id = json['id'],
-        userId = json['userId'],
-        title = json['title'],
-        body = json['body'];
+      : id = json['id'] as int,
+        userId = json['userId'] as int,
+        title = json['title'] as String,
+        body = json['body'] as String;
 }

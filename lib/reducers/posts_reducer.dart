@@ -9,3 +9,7 @@ final postsReducer = combineReducers<List<Post>>([
 List<Post> _setLoadedPosts(List<Post> posts, PostsLoadedAction action) {
   return action.posts;
 }
+
+// List<Post> _loadPosts(List<Post> posts, PostsLoadAction action) {
+//   return
+// }

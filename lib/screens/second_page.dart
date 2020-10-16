@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class FirstPage extends StatelessWidget {
+class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text('First'),
+        child: Text('Second'),
       ),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:trying_redux/models/app_tab.dart';
 import 'package:trying_redux/models/comment.dart';
 import 'package:trying_redux/models/photo.dart';
@@ -36,3 +37,17 @@ class PhotosLoadedAction {
 
   final List<Photo> photos;
 }
+
+class NavigateToPostDetailsAction {
+  NavigateToPostDetailsAction({this.post});
+
+  final Post post;
+}
+
+class PostSelectedAction {
+  PostSelectedAction({this.post});
+
+  final Post post;
+}
+
+// class NavigateToCommentDetailsAction {}

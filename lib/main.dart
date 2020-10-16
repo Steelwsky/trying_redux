@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:trying_redux/home_page.dart';
+import 'package:trying_redux/keys.dart';
 import 'package:trying_redux/models/app_state.dart';
+import 'package:trying_redux/screens/post_details.dart';
 import 'package:trying_redux/store/app_store.dart';
 
 void main() {
@@ -24,9 +26,13 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
+        navigatorKey: Keys.navKey,
         routes: {
           '/': (context) {
             return MyHomePage();
+          },
+          '/postDetails' : (context) {
+            return PostDetails();
           }
         },
       ),
